@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Indie Cafe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Comfortaa:wght@400;700&family=Muli:wght@400;600&family=Encode+Sans+Expanded:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Muli', sans-serif;
+      background: #fff;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    section {
+      width: 100%;
+      padding: 80px 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .col {
+      flex: 1;
+      padding: 20px;
+    }
+
+    h1, h2 {
+      font-family: 'Comfortaa', cursive;
+    }
+
+    .script {
+      font-family: 'Kaushan Script', cursive;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 15px 40px;
+      border-radius: 35px;
+      color: #fff;
+      text-decoration: none;
+      font-family: 'Encode Sans Expanded', sans-serif;
+      font-size: 14px;
+      margin: 10px 10px 0 0;
+      transition: 0.3s;
+    }
+
+    .btn-pink { background: #efb6b6; }
+    .btn-blue { background: #83d2ef; }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      opacity: 0.9;
+    }
+
+    .divider {
+      width: 80%;
+      border-top: 3px dashed #efb6b6;
+      margin: 20px 0;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 90vh;
+      background: 
+        linear-gradient(rgba(66,0,0,0.7), rgba(66,0,0,0.7)),
+        url("http://sitefacilitado.com.br/wp-content/uploads/2020/02/icons8-team-NtwdMDylfTw-unsplash-alt-scaled.jpg") center/cover fixed;
+      color: #fff;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero h1 {
+      font-size: 55px;
+    }
+
+    .hero h2 {
+      font-size: 64px;
+      margin-bottom: 10px;
+    }
+
+    /* IMAGE FLOAT */
+    .float-img {
+      max-width: 100%;
+    }
+
+    /* FEATURE BOX */
+    .feature {
+      background: #fff;
+      border: 4px dashed #efb6b6;
+      border-radius: 35px;
+      padding: 50px 30px;
+      text-align: center;
+      margin: 15px;
+      position: relative;
+    }
+
+    .feature h3 {
+      color: #efb6b6;
+      margin: 15px 0;
+    }
+
+    .icon {
+      width: 70px;
+      height: 70px;
+      background: #efb6b6;
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      position: absolute;
+      top: -35px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    /* CTA */
+    .cta {
+      background: 
+        linear-gradient(rgba(239,129,129,0.95), rgba(239,129,129,0.95)),
+        url("http://sitefacilitado.com.br/wp-content/uploads/2020/02/petr-sevcovic-qE1jxYXiwOA-unsplash-scaled.jpg") center/cover fixed;
+      color: #fff;
+      text-align: center;
+    }
+
+    @media(max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .hero h1 {
+        font-size: 40px;
+      }
+
+      .hero h2 {
+        font-size: 42px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="col">
+      <h1 class="script">Indie Cafe</h1>
+      <h2>Cafe & Bolos</h2>
+      <div class="divider"></div>
+      <p>Maecenas id est non sapien consectetur sagittis facilisis vel ante.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCT -->
+<section>
+  <div class="container">
+    <div class="col">
+      <img class="float-img" src="http://sitefacilitado.com.br/wp-content/uploads/2020/02/drink-cake-1-1.png" alt="">
+    </div>
+
+    <div class="col">
+      <span class="btn btn-pink">NEW!</span>
+      <h2 style="color:#efb6b6;">Cupcake Smoothies</h2>
+      <p><strong>Our New Smoothie Cupcakes Are Ready!</strong></p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <a href="#" class="btn btn-blue">Food Menu</a>
+      <a href="#" class="btn btn-pink">Drinks Menu</a>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section style="background:#efb6b6;">
+  <div class="container">
+
+    <div class="feature">
+      <div class="icon">📸</div>
+      <h3>Insta-Friendly</h3>
+      <p>Take The Perfect Picture</p>
+    </div>
+
+    <div class="feature">
+      <div class="icon">🐾</div>
+      <h3>Pets Allowed</h3>
+      <p>Bring Your Friends</p>
+    </div>
+
+    <div class="feature">
+      <div class="icon">💎</div>
+      <h3>Celeb Hangout</h3>
+      <p>The Cafe For A-List Lunches</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <h2>#treatyourself</h2>
+  <p>Sweet treats & good vibes</p>
+</section>
+
+</body>
+</html>
